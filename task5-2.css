@@ -26,33 +26,34 @@ header {
   z-index: 100;
 }
 header button {
-  float: left;
-  padding: 0 1rem;
+  display: inline;
+  padding: 0 2rem;
   outline: none;
   border: none;
   color: #fff;
   border-radius: 4px;
   background: #55a8b3;
+  margin: 0 -5px;
 }
 header span {
-  display: inline-block;
+	display: block;
   font-size: 1.8rem;
-  line-height: 2.4rem;
-  margin: 0.5rem 4rem;
+  line-height: 2.8rem;
+  margin: 0 10%;
 }
 header a {
   display: block;
-  float: right;
+  position: absolute;
+  top: 0.4rem;
+  right: 0;
   width: 3rem;
   height: 2rem;
   margin-right: 2.4%;
 }
 header a img {
-  width: 2rem;
-  height: 2rem;
-  margin-top: 40%;
-  -webkit-transform: translateY(-50%);
-}
+	max-width: 2rem;
+  max-height: 2rem;
+  }
 header .active {
   background: #ffffff;
   color: #5fc0cd;
@@ -127,8 +128,9 @@ main .server_list .location {
   background-size: contain;
   padding-left: 2rem;
 }
-footer .footer {
+footer {
   width: 100%;
+  display: block;
   background: #f8fafb;
   border-top: 1px solid #e2eaec;
   position: fixed;
@@ -145,9 +147,6 @@ footer a {
 footer span {
   display: block;
 }
-footer img {
-  display: block;
-}
 footer .home {
   float: left;
   margin-left: 10%;
@@ -157,13 +156,30 @@ footer .home a {
   color: #5fc0cd;
 }
 footer .write {
+	margin: 0 auto;
+	width: 20%;
+}
+footer .write  a{
   display: inline-block;
 }
 footer .write img {
-  max-width: 4.6rem;
-  max-height: 4.6rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  vertical-align: middle;
 }
 footer .my {
-  float: right;
+  position: absolute;
+  right: 0;
+  top: 0;
   margin-right: 10%;
+}
+footer .my img{
+	max-width: 2.4rem;
+  max-height: 2.4rem;
+  display: block;
+}
+footer .home img{
+	max-width: 2.6rem;
+  max-height: 2.6rem;
+  display: block;
 }
