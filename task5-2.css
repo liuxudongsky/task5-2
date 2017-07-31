@@ -67,9 +67,12 @@ main {
   right: 0;
   -webkit-overflow-scrolling: touch;
 }
+main .lef_border{
+	border-left: 1px solid #999999;
+}
 main .top_bar {
   width: 100%;
-  border: 1px solid #e1e5e7;
+  border-bottom: 1px solid #e1e5e7;
 }
 main .top_bar:after{
 	content: '';
@@ -85,14 +88,13 @@ main ul{
 main .nav>li{
 	float: left;
 	text-decoration: none;
-	color: #999999;
 	text-align: center;
 	font-weight: normal;
 	font-family: arial;
 	font-size: 1.4rem;
 	line-height: 2.4rem;
-	background: url(img/down.png) no-repeat right top;
-	background-size: 1.8rem 2.8rem;
+	background: url(img/down1.png) no-repeat right .6rem;
+	background-size: 1.4rem 1.4rem;
 	width: 31%;
 	margin: 0.5% 2% 0.5% 0;
 	float: left;
@@ -102,6 +104,7 @@ main ul a{
 	text-decoration: none;
 	text-align: center;
 	margin-right: 20px;
+	color: #999999;
 }
 main .drop-down-content{
 	padding: 0;
